@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Profile Dropdown Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="profile-container">
+        <img
+          src="https://i.pravatar.cc/40?img=5"
+          alt="Profile"
+          class="profile-pic"
+          id="profileToggle"
+        />
+        <div class="dropdown-menu" id="dropdownMenu">
+          <ul>
+            <li class="drop-animate">
+              <i class="fas fa-plus-circle"></i> Home
+            </li>
+            <li class="drop-animate"><i class="fas fa-edit"></i> Opportunity</li>
+            <li class="drop-animate"><i class="fas fa-user"></i> Contact Us</li>
+            <li class="drop-animate"><i class="fas fa-user"></i> About Us</li>
+            <li class="drop-animate">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Optional Backdrop -->
+    <div class="backdrop" id="menuBackdrop"></div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

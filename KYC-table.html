@@ -1,0 +1,475 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ritik .k. satpute" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js" integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link href="libAndJs/css2.css" rel="stylesheet" type="text/css"/>
+        <script src="js/user_asCOPs.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js" integrity="sha512-hUhvpC5f8cgc04OZb55j0KNGh4eh7dLxd/dPSJ5VyzqDWxsayYbojWyl5Tkcgrmb/RVKCRJI1jNlRbVP4WWC4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link href="css/bomCSS.css" rel="stylesheet" type="text/css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="css/onBoardsCSS.css" rel="stylesheet" type="text/css"/>
+        <!--new-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>=
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<script type="module" src=" https://cdn.jsdelivr.net/npm/kyc-sdk-javascript@0.0.1-security/+esm"></script> 
+        <script src="js/modules/kycJointSaving.module.min.js" type="text/javascript"></script>
+        <script src="js/modules/kycPartnership.module.min.js" type="text/javascript"></script>
+        <script src="js/modules/kycPubpvt.module.min.js" type="text/javascript"></script>
+        <script src="js/modules/kycSavingCurrent.module.min.js" type="text/javascript"></script>
+        <script src="js/modules/kycSoleProprietorship.module.min.js" type="text/javascript"></script>
+        <script src="js/modules/kycTasc.module.min.js" type="text/javascript"></script>
+        <link href="css/alertCSS.css" rel="stylesheet" type="text/css"/>
+        <title>COPs Dashboard</title>
+    </head>
+    <body ng-app="myApp" ng-controller="cont">
+        <div class="row" >
+
+            <div ng-show="listContainerVisible" class="container">
+                <div>
+                    <header>
+                        <div>
+                            <img src="image/logo.png" alt="Company Logo" style="width: 70px; height: 61px;">
+                            <p style="color: #555; font-weight: bold; font-size: 12px;" id="timestamp"></p>
+                        </div>
+                        <div>
+                            <h1 class="titlename">KYC Verification System</h1>
+                        </div>
+                        <div>
+                            <button class="header-btn" ng-click="logout()">Logout</button>
+                            <button id="info-icon" class="header-btn help-icon" style="font-size: 18px;">?</button>
+                            <div id="popup" class="popup list-container">
+                                <div style=" color: black; text-align: left;">
+                                    <div style="position: sticky; top: 0;">
+                                        <span class="close" id="close-btn">❌</span>
+                                        <h2 class="form-heading" >Help</h2>
+                                    </div>
+
+                                    <table style="border: solid #80C37D thin;" >
+                                        <tr>
+                                            <th>Problem</th>
+                                            <th>Solution</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Pop Document View (Esc)</td>
+                                            <td>Press Ctrl + W</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Verify Aadhar Existence</td>
+                                            <td>Use the search bar and type the Aadhar number</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Download Pre-uploaded Document</td>
+                                            <td>Follow below steps :
+                                                <ol>
+                                                    <li>Search the Aadhar number or name</li>
+                                                    <li>Right-click on the document in the list view</li>
+                                                    <li>Select "Save Image As"</li>
+                                                    <li>STOP.</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Standardizing File Names</td>
+                                            <td>Branch Operations Manager (BOM) should rename documents to match the document number</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>How to format Excel Sheet adharNo Cell ?</td>
+                                            <td>Follow below steps :
+                                                <ol>
+                                                    <li>Right click on the header of the selected column.</li>
+                                                    <li>Click on "Format Cells..." from the list view.</li>
+                                                    <li>Click on "Custom" .</li>
+                                                    <li>Now Select "0" and press OK button.</li>
+                                                    <li>STOP.</li>
+                                                </ol></td>
+                                        </tr>
+                                        <tr>
+                                            <td>On clicking otherDoc not showing multiple Uploaded DOCs ?</td>
+                                            <td>Follow below steps :
+                                                <ol>
+                                                    <li>On clicking otherDocs preview it will show a pop-ups block in the browser search bar .</li>
+                                                    <li>Click on the pop-ups  block .</li>
+                                                    <li>Select the option "Always allow pop-ups and redirects from the http://.....</li>
+                                                    <li>Now Click on  "Done" button.</li>
+                                                    <li>STOP.</li>
+                                                </ol></td>
+                                        </tr>                                    
+                                        <tr>
+                                            <td colspan="2">
+                                                <a href="image/KycVerificationSystem.pdf" target="_blank">For more information click here ....</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <script>
+                                        // Get the elements
+                                        const infoIcon = document.getElementById('info-icon');
+                                        const popup = document.getElementById('popup');
+                                        const closeBtn = document.getElementById('close-btn');
+                                        // Show the popup when info icon is clicked
+                                        infoIcon.addEventListener('click', () => {
+                                            popup.style.display = 'block';
+                                        });
+                                        // Close the popup when the close button is clicked
+                                        closeBtn.addEventListener('click', () => {
+                                            popup.style.display = 'none';
+                                        });
+                                        // Close the popup if user clicks outside the popup
+                                        window.addEventListener('click', (e) => {
+                                            if (e.target === popup) {
+                                                popup.style.display = 'none';
+                                            }
+                                        });
+                            </script>
+                        </div>
+                    </header>
+                </div>
+                <br>
+
+                <div>
+                    <h3 style="width: 85%;display: inline-block;">Central Operation Process Team(COPs)  <span ng-show="filterData" style="font-size: 16px; font-weight: 400; color: red; "> Table Showing Filtered Data </span></h3> 
+                    <div class="user_name" >User : {{userRecord.userName}}</div> 
+                </div> 
+                <div class="table-view">
+                    <div class="row d-flex align-content-center align-items-center">
+                        <div class="rcorners col-2 d-flex align-content-center align-items-center">
+                            <input class="searchbar" type="text" placeholder="Search..."  ng-model="search"/>
+                        </div>
+                        <div class="col p-0">
+                             <span><img class="searchIcon" ng-click="filterPopup()" " type="image" src="image/filter_dark.png" width="20" height="5"/>
+                             </span>
+                            <button type="button" class="form-button attractive-button" ng-click="exportToExcel()">Export To Excel</button>
+                        </div>
+                        <div class="col-6" style="text-align: right;">
+                            <button type="button" class="form-button attractive-button" ng-click="searchByFiled('Approved')" >Approved</button>
+                            <button type="button" class="form-button attractive-button" ng-click="searchByFiled('Pending at COPs')" >Pending at COPs</button>
+                            <button type="button" class="form-button attractive-button" ng-click="searchByFiled('Pending at BOM')" >Pending at BOM</button>
+                            <button type="button" class="form-button attractive-button" ng-click="searchByFiled('')" >All</button>
+                        </div>
+                    </div>
+                    <table>
+                        <thead  style="position: sticky; position: -webkit-sticky; top: 0;">
+                            <tr class="cardviewth">
+                                <th style="width: 4%">Ack_No.</th>
+                                <th style="width: 4%">Unique Id</th>
+                                <th style="width: 10%">Name</th>
+                                <th style="width: 6%">Aadhar No.</th>
+                                <th style="width: 6%">Mobile No.</th>
+                                <th style="width: 7%">Acc Type</th>
+                                <th style="width: 8%">Branch</th>
+                                <th style="width: 8%">Last Updated</th>
+                                <th style="width: 14%">Status</th>
+                                <th style="width: 14%">Remark</th>
+                                <th style="width: 6%">Uploaded By</th>
+                                <th style="width: 6%">Approved By</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cardviewtr" ng-repeat="record in masterKycRecordList| continuousSubstringFilter:search:['code','id','applicantFirst','adharNoFirst','mobileNo','accountType','branchName','date','status','remark','uploadedBy','approvedBy']">
+                                <!--<td class="idpoint" ng-click="editRecord(record)">{{record.code.substring(5, 15)}}</td>-->
+                                <td class="idpoint" ng-click="editRecord(record)">{{record.code.split("")[1] + "" + record.code.split("_")[2].substring(0, 6)}}</td>
+                                <td >{{record.id}}</td>
+                                <td >{{record.applicantFirst}}</td>
+                                <td >{{record.adharNoFirst}}</td>
+                                <td >{{record.mobileNo}}</td>
+                                <td >{{record.accountType}}</td>
+                                <td >{{record.branchName}}</td>
+                                <td>{{record.date[record.date.length-1]| date:'dd/MM/yyyy HH:mm:ss a' }}</td>
+                                <td>{{record.status}}</td>
+                                <td style="color: #007BFF; cursor: pointer;"  ng-click="viewRemark(record.remark)" >{{record.remark.substring(0, 30)}} Read more ...</td>
+                                <td>{{record.uploadedBy}}</td>
+                                <td>{{record.approvedBy}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <ul class="pagination">
+                        <li>
+                            <a href="">Current Page : {{currentPageNum + 1}} </a>
+                        </li>
+                        <li ng-click="pagination(1)" ng-class="{'disabled': currentPageNum === 0}">
+                            <a href="">First</a>
+                        </li>
+                        <li ng-click="pagination(currentPageNum - 1)" ng-class="{'disabled': currentPageNum === 0}">
+                            <a href="">Previous</a>
+                        </li>
+                        <li ng-class="{'disabled': currentPageNum === 0}">
+                            <a href="" ng-click="pagination(0)" > 1 </a>
+                        </li>
+                        <li ng-class="{'disabled': currentPageNum === 1 || 1 >= totalPages }">
+                            <a href="" ng-click="pagination(1)"> 2 </a>
+                        </li>
+                        <li ng-class="{'disabled': currentPageNum === 2 || 2 >= totalPages }">
+                            <a href="" ng-click="pagination(2)"> 3 </a>
+                        </li>
+                        <li ng-class="{'disabled': currentPageNum === 3 || 3 >= totalPages }">
+                            <a href="" ng-click="pagination(3)"> 4 </a>
+                        </li>
+                        &nbsp;&nbsp;.&nbsp;.&nbsp;.&nbsp;&nbsp;
+                        <li ng-class="{'disabled': currentPageNum === totalPages - 1}">
+                            <a href="" ng-click="pagination(totalPages - 1)">{{totalPages}}</a>
+                        </li>
+                        <li ng-click="pagination(currentPageNum + 1)" ng-class="{'disabled': currentPageNum === totalPages - 1}">
+                            <a href="" >Next</a>
+                        </li>
+                        <li ng-click="pagination(totalPages - 1)" ng-class="{'disabled': currentPageNum === totalPages - 1}">
+                            <a href="">Last</a>
+                        </li>
+                        <li>
+                            <label for="pageInput" class="mt-2">Go to page:</label>
+                            <input type="number" id="pageInput" class="page-input" ng-model="pageInput" min="1" max="{{ totalPages}}" />
+                            <button class="btn btn-primary" ng-click="pagination(pageInput - 1)"> Go </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Alert Box -->
+            <div ng-show="showEditFormAlert" class="custom-alert-overlay">
+                <div class="custom-alert">
+                    <div class="alert-content-editForm">
+                        <strong>Alert!</strong> User : {{Record.accessingId}} already accessing the form.
+
+                        <div class="mt-2">
+                            <!--                            <button type="button" class="btn btn-success" ng-click="showCnformAlert()" >
+                                                            Accept
+                                                        </button>-->
+                            <button type="button" class="btn btn-danger"  ng-click="closeAlert()">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--            <div ng-show="showConfrmEditFormAlert" class="custom-alert-overlay">
+                            <div class="custom-alert">
+                                <div class="alert-content-editForm">
+                                    <strong>Do you really want to access the form ?</strong> 
+                                    <div class="mt-2">
+                                        <button type="button" class="btn btn-success" ng-click="openEditForm()" >
+                                            Yes
+                                        </button>
+                                        <button type="button" class="btn btn-danger"  ng-click="closeAlert()">
+                                            No
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+
+            <!--OKYC popup-->
+            <div class="container mt-5 modal-content" ng-show="aadhaarCardshow">
+                <div>
+                    <div style="width: 40%; left:30%; right: 30%; top: 30;" class="modal" id="aadharModal" tabindex="-1" role="dialog" aria-labelledby="otpModalLabel" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+
+                        <div class="card p-4" >
+                            <div class="modal-body">
+                                <h3 class="card-title">Aadhaar Verification</h3>
+                                <form ng-submit="sendOtp()">
+                                    <div class="form-group">
+                                        <label style="font-size: larger; font-weight: 500;" for="aadhaar">Aadhaar:</label>
+                                        <input type="text" class="form-control" id="aadhaar" ng-model="aadhaar" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" ng-disabled="disSendOtp">Send OTP</button>
+                                    <button type="button" class="btn btn-secondary" ng-click="cancel()">Cancel</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal w-100" id="otpModal" tabindex="-1" role="dialog" aria-labelledby="otpModalLabel" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+                    <div class="modal-dialog w-100" role="document">
+                        <div class="modal-content w-100">
+                            <div class="modal-header" style="background-color:#80C37D;">
+                                <h5 style="color:black; font-size: x-large; font-weight: 600; " class="modal-title" id="otpModalLabel">Enter OTP</h5>
+
+                            </div>
+                            <div class="modal-body">
+                                <form ng-submit="verifyOtp()">
+                                    <div class="form-group">
+                                        <label for="otp">OTP:</label>
+                                        <input type="text" class="form-control" id="otp" ng-model="otp" required>
+                                    </div>
+                                    <div ng-show="showTimer">
+                                        <span >Time remaining:</span>
+                                        <p ng-class="{'blink red-text': timer <= 30, 'green-text': timer > 30}"> {{formatTime(timer)}}</p>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" ng-disabled="disVerify">Verify</button>
+                                    <button type="button" class="btn btn-secondary" ng-click="cancel()">Cancel</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <div ng-show="verificationSuccess" class="alert alert-success" role="alert">
+                                    Aadhaar Successfully Verified For <strong> {{verifyOtpResponse.result.user_full_name}} . <br>
+                                        DOB : {{verifyOtpResponse.result.user_dob}} .</strong>
+
+                                </div>
+                                <div ng-show="verificationFailure" class="alert alert-danger" role="alert">
+                                    Aadhaar Verification Failed. Please try again.
+                                </div>
+                                <button ng-click="resendOtp()" class="btn btn-secondary" ng-show="showResendButton">Resend OTP</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Aadhar Number exist -->
+            <div ng-show="forAadharDetails" class="popupAadhar list-container">
+                <div style=" color: black; text-align: left;">
+                    <div style="position: sticky; top: 0;">
+                        <span class="close" ng-click="closeAadharDetails()">❌</span>
+                        <h2 class="form-heading" >KYC Verification Details</h2>
+                    </div>
+
+                    <table class="table" style="border: solid #80C37D thin; border-radius: 5px;" >
+                        <thead>
+                            <tr class="cardviewth" >
+                                <th scope="col">Ack_No.</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Aadhar No.</th>
+                                <th scope="col">Acc Type</th>
+                                <th scope="col">Branch</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Uploaded By</th>
+                                <th scope="col">Approved By</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cardviewtr" ng-repeat="record in list">
+                                <td scope="row">{{record.code.substring(5, 15)}}</td>
+                                <td>{{record.applicantFirst}}</td>
+                                <td>{{record.adharNoFirst}}</td>
+                                <td>{{record.accountType}}</td>
+                                <td>{{record.branchName}}</td>
+                                <td>{{record.status}}</td>
+                                <td>{{record.uploadedBy}}</td>
+                                <td>{{record.approvedBy}}</td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div style="border-radius: 4px; margin-left: 8px; margin-right: 8px; margin-top: 8px; background-color: #004516; color: white; font-size: 16px; text-align: center; opacity: 0.5; ">
+            ©2024. Sahayog Multi-State Credit Co-operative Society Ltd. – All rights reserved.(PV 1.4)
+        </div>
+
+        <div ng-show="forFilterPopup" class="custom-alert-overlay">
+            <div class="custom-alert">
+                <div class="alert-content-editForm">
+                    <form ng-submit="fetechDataFilter(0)">
+                        <span style="font-style: italic; font-weight: 500;">Note : Type OR Select "all" in Input Field, Searching for All.</span>
+                        <div id ="popUpkyc" class="spa border border-success rounded p-4">
+                            <div class="form-row mb-2">
+                                <div class="col">
+                                    <input type="text" pattern="^[A-Za-z]+(?: [A-Za-z]+)*$ {0,25}" id="applicantName" name="applicantName" class="form-control"  placeholder="Applicant Name" ng-model="applicantName" required="">
+                                </div>
+                                <div class="col">
+                                    <input type="text"  title="Type All or Aadhar Number must be 12 length." id="adharNo" name="adharNo" class="form-control" placeholder="Aadhar Number" ng-model="adharNo" required="">
+                                </div>
+                            </div>
+                            <div class="form-row  mb-2">
+                                <div class="col" >
+                                    <!--<label for="accountType" class="form-label">Account Type :</label>-->
+                                    <select id="accountType" name="accountType" class="form-control" ng-model="accountType" required="">
+                                        <option value="" disabled selected  ><i class="center-align" style="color: #999;" />Select Account Type</option>
+                                        <option value="all">All</option>
+                                        <optgroup label="Saving Account">
+                                            <option value="Silver Saving">Silver Saving</option>
+                                            <option value="Normal Saving">Normal Saving</option>
+                                        </optgroup>
+                                        <optgroup label="Joint Saving Account">
+                                            <option value="Joint Silver Saving">Joint Silver Saving</option>
+                                            <option value="Joint Normal Saving">Joint Normal Saving</option>
+                                        </optgroup>
+                                        <optgroup label="Individual Current Account">
+                                            <option value="Current Wealth">Current Wealth</option>
+                                            <option value="Current Gold">Current Gold</option>
+                                            <option value="Normal Current">Normal Current</option>
+                                        </optgroup>
+                                        <optgroup label="Non-Individual Current Account">
+                                            <option value="Sole Proprietorship">Sole Proprietorship</option>
+                                            <option value="Partnership Module">Partnership Module</option>
+                                            <option value="Public_Private LTD Company">Public/Private LTD Company</option>
+                                            <option value="TASC">TASC</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="col" >
+                                    <!--<label for="status" class="form-label">Status :</label>-->
+                                    <select id="accountStatus" name="accountStatus" class="form-control" ng-model="accountStatus"  required="">
+                                        <option value="" disabled selected  ><i class="center-align" style="color: #999;" >Select Status</option>
+                                            <optgroup label="Status">
+                                                <option value="all">All</option>
+                                                <option ng-repeat="option in accountStatusList" value="{{option}}">{{option}}</option>
+                                            </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <!--<label for="branchName" class="form-label">Branch Name :</label>-->
+                                    <select id="branchName" name="branchName" class="form-control" ng-model="branchName" required="">
+                                        <option value="" disabled selected  ><i class="center-align" style="color: #999;" >Select Branch Name</option>
+                                            <option value="all">All</option>
+                                            <option ng-repeat="option in branchlist" value="{{option}}">{{option}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-3 p-2 row">
+                            <button type="submit" class="btn btn-success shadow-md m-2" ng-disabled="!forFilterPopup">
+                                Submit
+                            </button>
+                            <button type="button" class="btn btn-danger shadow-md m-2" ng-click="reload()">
+                                Close
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+                    var idleTimeout = 900000; // 5 minutes in milliseconds
+                    var idleTimer;
+                    function resetTimer() {
+                        clearTimeout(idleTimer);
+                        idleTimer = setTimeout(logout, idleTimeout);
+                    }
+
+                    function logout() {
+                        window.localStorage.removeItem("user_asCOPs");
+                        location.reload();
+                        console.log("User automatically logged out due to inactivity.");
+                    }
+ 
+                    // Initial setup
+                    resetTimer();
+                    // Listen for user activity
+                    window.addEventListener('mousemove', resetTimer);
+                    window.addEventListener('keydown', resetTimer);
+                    window.addEventListener('scroll', resetTimer);
+        </script>
+    </body>
+</html>

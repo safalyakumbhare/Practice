@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Date Difference DD:HH:MM</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      padding: 40px;
+      text-align: center;
+    }
+    h2 {
+      color: #333;
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Date Difference Calculator (DD:HH:MM)</h2>
+
+  <label>Start DateTime: <input type="date" id="startDate" value="2025-05-14"></label><br>
+  <label>End DateTime: <input type="date" id="endDate" value="2026-06-15"></label>
+
+  <!-- <div class="result" id="difference">Difference: 00:00:00</div>
+    -->
+  <div>
+    <span class="day">00</span> :
+    <span class="hour">00</span> :
+    <span class="min">00</span>
+  </div>
+
+  <script>
+    function updateDifference() {
+      let start = new Date($('#startDate').val());
+      let end = new Date($('#endDate').val());
+
+      if (isNaN(start) || isNaN(end) || start > end) {
+        $('#difference').text("Difference: Invalid or End < Start");
+        return;
+      }
+
+      let diffMs = end - new Date(); // Live countdown from now to end
+
+      if (diffMs < 0) {
+        $('#difference').text("Time's up!");
+        return;
+      }
+
+      let totalMinutes = Math.floor(diffMs / (1000 * 60));
+      let totalSeconds = Math.floor(diffMs / 1000);
+
+      let days = Math.floor(totalMinutes / (60 * 24));
+      let hours = Math.floor((totalMinutes % (60 * 24)) / 60);
+      let minutes = Math.floor((totalMinutes % 60));
+      let seconds = totalSeconds % 60;
+
+      
+      let day =  String(days) 
+      let hour =  String(hours) 
+      let min=   String(minutes)
+      // $('#difference').text("Difference: " + formatted);
+      $(".day").text(day);
+      $(".hour").text(hour);
+      $(".min").text(min);
+    }
+
+    // Start interval to update every second
+    setInterval(updateDifference, 1000);
+
+    // Initial update
+    $('#startDate, #endDate').on('change', updateDifference);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Design</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #e8f0fe;
+      font-family: Arial, sans-serif;
+    }
+    .sidebar {
+      height: 100vh;
+      background-color: #fff;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+    }
+    .sidebar a {
+      display: block;
+      padding: 15px;
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .sidebar a:hover {
+      background-color: #f0f0f0;
+    }
+    .dashboard-header {
+      margin-left: 250px;
+      padding: 20px;
+    }
+    .stats-card {
+      background-color: #5a2fc5;
+      color: #fff;
+      border-radius: 8px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .stats-card h2 {
+      font-size: 24px;
+    }
+    .recent-articles {
+      margin-left: 250px;
+      padding: 20px;
+    }
+    .status-published {
+      background-color: #28a745;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3 class="text-center p-3">GeeksForGeeks</h3>
+    <a href="#">Dashboard</a>
+    <a href="#">Articles</a>
+    <a href="#">Report</a>
+    <a href="#">Institution</a>
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="dashboard-header">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="stats-card">
+          <h2>60.5k</h2>
+          <p>Article Views</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stats-card">
+          <h2>150</h2>
+          <p>Likes</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stats-card">
+          <h2>320</h2>
+          <p>Comments</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stats-card">
+          <h2>70</h2>
+          <p>Published</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="recent-articles">
+    <h4>Recent Articles</h4>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Article</th>
+          <th>Views</th>
+          <th>Comments</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Article 73</td>
+          <td>2.9k</td>
+          <td>210</td>
+          <td><span class="status-published">Published</span></td>
+        </tr>
+        <tr>
+          <td>Article 72</td>
+          <td>1.5k</td>
+          <td>360</td>
+          <td><span class="status-published">Published</span></td>
+        </tr>
+        <tr>
+          <td>Article 71</td>
+          <td>1.1k</td>
+          <td>150</td>
+          <td><span class="status-published">Published</span></td>
+        </tr>
+        <tr>
+          <td>Article 70</td>
+          <td>1.2k</td>
+          <td>420</td>
+          <td><span class="status-published">Published</span></td>
+        </tr>
+        <tr>
+          <td>Article 69</td>
+          <td>2.6k</td>
+          <td>190</td>
+          <td><span class="status-published">Published</span></td>
+        </tr>
+        <tr>
+          <td>Article 68</td>
+          <td>1.9k</td>
+          <td>390</td>
+          <td><span class="status-published">Published</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
