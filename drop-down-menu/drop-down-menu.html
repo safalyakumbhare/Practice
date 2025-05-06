@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <title>Profile Dropdown Menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Animate.css -->
     <link
       rel="stylesheet"
@@ -30,16 +36,19 @@
           class="profile-pic"
           id="profileToggle"
         />
-        <div class="dropdown-menu" id="dropdownMenu">
+        <!-- Replace 'dropdown-menu' and 'dropdown' -->
+        <div class="custom-dropdown" id="dropdownMenu">
           <ul>
             <li class="drop-animate">
-              <i class="fas fa-plus-circle"></i> Home
+              <i class="fas fa-plus-circle"></i><a href="#">Home</a>
             </li>
-            <li class="drop-animate"><i class="fas fa-edit"></i> Opportunity</li>
-            <li class="drop-animate"><i class="fas fa-user"></i> Contact Us</li>
-            <li class="drop-animate"><i class="fas fa-user"></i> About Us</li>
             <li class="drop-animate">
-              <i class="fas fa-sign-out-alt"></i> Logout
+              <i class="fas fa-edit"></i> <a href="#">Opportunity</a>
+            </li>
+            <li class="drop-animate"><i class="fas fa-user"></i> <a href="#">Contact Us</a></li>
+            <li class="drop-animate"><i class="fas fa-user"></i> <a href="#">About Us</a></li>
+            <li class="drop-animate">
+              <i class="fas fa-sign-out-alt"></i> <a href="#">Logout</a>
             </li>
           </ul>
         </div>

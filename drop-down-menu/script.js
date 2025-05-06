@@ -18,7 +18,7 @@ $(document).ready(function () {
         setTimeout(() => {
           $item
             .show()
-            .removeClass("animate__fadeOutDown")
+            .removeClass("animate__fadeOutUp")
             .addClass("animate__animated animate__fadeInUp")
             .css("animation-delay", `${index * 0.1}s`);
         }, index * 100);
@@ -32,11 +32,11 @@ $(document).ready(function () {
           setTimeout(() => {
             $item
               .removeClass("animate__fadeInUp")
-              .addClass("animate__animated animate__fadeOutDown");
+              .addClass("animate__animated animate__fadeOutUp");
       
             // Wait for animation to finish before hiding
             setTimeout(() => {
-              $item.hide().removeClass("animate__animated animate__fadeOutDown");
+              $item.hide().removeClass("animate__animated animate__fadeOutUp");
             }, 500); // Match animation duration
           }, index * 100); // Match delay as used in open
         });
